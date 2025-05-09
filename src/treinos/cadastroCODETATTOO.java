@@ -1,4 +1,4 @@
-package Condicoes;
+package treinos;
 
 import java.util.Scanner;
 
