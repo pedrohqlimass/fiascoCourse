@@ -12,7 +12,6 @@ public class IfEElse {
         String nome = "Naruto Uzumaki";
         String rank;
         int idade = 20;
-        boolean hokage = false;
         short numeroDeMissoes = 21;
 
         //se (condicao) (faca isso)
@@ -24,13 +23,13 @@ public class IfEElse {
             System.out.println("Rank: Gennin");
         }
         
-        Long saldoNaConta = 5000L;
+        /*Long saldoNaConta = 5000L;
         if (saldoNaConta >= 5399){
             System.out.println("Vou comprar um Xbox Series X");
         } else if (saldoNaConta >= 3900 && saldoNaConta < 5399) {
             System.out.println("Vou ter que comprar um PS5");
         }else {
             System.out.println("Vou de Nintendo Swicth memo");
-        }
+        }*/
     }
 }
