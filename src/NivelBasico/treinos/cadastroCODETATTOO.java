@@ -1,4 +1,4 @@
-package treinos;
+package NivelBasico.treinos;
 
 import java.util.Scanner;
 

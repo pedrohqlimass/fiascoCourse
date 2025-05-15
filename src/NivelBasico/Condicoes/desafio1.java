@@ -1,4 +1,4 @@
-package Condicoes;
+package NivelBasico.Condicoes;
 
 public class desafio1 {
     public static void main(String[] args) {
