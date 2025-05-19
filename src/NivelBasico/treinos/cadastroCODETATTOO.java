@@ -2,7 +2,7 @@ package NivelBasico.treinos;
 
 import java.util.Scanner;
 
-public class cadastroCODETATTOO {
+public class  cadastroCODETATTOO {
     public static void main(String[] args) {
 
         System.out.println("Seja Bem Vindo á CODETATTOO!!");
