@@ -10,7 +10,7 @@ public class desafio2 {
         int contador = 0;//quantidade de ninjas cadastrados
         int opcao = 0;
 
-        //Usando while para repetir o nome até o úsuario escolher sair
+        //Usando while para repetir até o úsuario escolher sair
         while (opcao != 3) {
             System.out.println("\n===== Menu Ninja =====");
             System.out.println("1. Cadastrar Ninja");
