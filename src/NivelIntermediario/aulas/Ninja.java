@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.aulas;
 
 public class Ninja {
 
