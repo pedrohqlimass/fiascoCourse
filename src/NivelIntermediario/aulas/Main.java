@@ -3,28 +3,33 @@ package NivelIntermediario.aulas;
 public class Main {
     public static void main(String[] args) {
 
-        //Criar Ninja Naruto
-        Ninja narutoUzumaki = new Ninja();
-        narutoUzumaki.nome = "Naruto Uzumaki";
-        narutoUzumaki.aldeia = "Aldeia da Folha";
-        narutoUzumaki.idade = 17;
+        //Ninja Naruto Uzumaki
+        Uzumaki naruto = new Uzumaki();
+        naruto.nome = "Uzumaki Naruto";
+        naruto.aldeia = "Aldeia da Folha";
+        naruto.idade = 18;
+        naruto.modoSabioAtivado();
 
-        //Criar Ninja Sasuke
-        Ninja sasukeUchiha = new Ninja();
-        sasukeUchiha.nome = "Sasuke Uchiha";
-        sasukeUchiha.aldeia = "Aldeia da Folha";
-        sasukeUchiha.idade = 27;
-        //Aplicando metodo ao objeto
-        sasukeUchiha.SharinganAtivado();
-        String chamandoMetodo = sasukeUchiha.euSouUmNinja();
-        System.out.println(chamandoMetodo);
+        //Ninja Sasuke Uchiha
+        Uchiha sasuke = new Uchiha();
+        sasuke.nome = "Uchiha Sasuke";
+        sasuke.aldeia = "Aldeia da Folha";
+        sasuke.idade = 18;
+        sasuke.SharinganAtivado();
 
-        
-        //Criar Sakura
-        Ninja sakuraHaruno = new Ninja();
-        sakuraHaruno.nome = "Sakura Haruno";
-        sakuraHaruno.aldeia = "Aldeia da Folha";
-        sakuraHaruno.idade = 19;
+        //Ninja Sakura Haruno
+        Haruno sakura = new Haruno();
+        sakura.nome = "Haruno Sakura";
+        sakura.aldeia = "Aldeia da Folha";
+        sakura.idade = 18;
+        sakura.AtivarCura();
+
+        //Ninja Hyuga Hinata
+        Hyuga hinata = new Hyuga();
+        hinata.nome = "Hyuga Hinata";
+        hinata.aldeia = "Aldeia da Folha";
+        hinata.idade = 18;
+        hinata.AtivarByakugan();
 
     }
 }
