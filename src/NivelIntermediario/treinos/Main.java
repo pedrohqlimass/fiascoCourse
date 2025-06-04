@@ -1,5 +1,7 @@
 package NivelIntermediario.treinos;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -17,7 +19,10 @@ public class Main {
         String mostrarCaracteristicas = hondaS2000.toString();
         System.out.println(mostrarCaracteristicas);
 
-        int idadeDoCarro = hondaS2000.calcularIdadeCarro(2025);
+        //Usando LocalDate
+        int anoAtual = LocalDate.now().getYear(); //Pega o ano atual automaticamente
+        int idadeDoCarro = hondaS2000.calcularIdadeCarro(anoAtual);
+
         System.out.println("Seu carro foi fabricado em " + hondaS2000.anoFabricacao + " e fazem " + idadeDoCarro + " anos que foi fabricado"  );
         System.out.println("Uma máquina rara!");
 
