@@ -1,4 +1,9 @@
 package NivelIntermediario.aulas;
 
-public interface Hyugauzumaki {
+public interface HyugaUzumaki {
+
+    void ativarKarma();
+
+    void ativarJougan();
+
 }
