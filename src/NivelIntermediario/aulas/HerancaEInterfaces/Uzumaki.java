@@ -1,6 +1,6 @@
-package NivelIntermediario.aulas;
+package NivelIntermediario.aulas.HerancaEInterfaces;
 
-public class Uzumaki extends  Ninja{
+public class Uzumaki extends Ninja {
     public void modoSabioAtivado(){
         System.out.println("Meu nome é " + nome + ". O Modo Sábio foi ativado... Eu nunca volto atrás!");
     }

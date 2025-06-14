@@ -1,4 +1,4 @@
-package NivelIntermediario.aulas;
+package NivelIntermediario.aulas.HerancaEInterfaces;
 
 public class Main {
     public static void main(String[] args) {
