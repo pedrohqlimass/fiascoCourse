@@ -25,7 +25,7 @@ public class Hokage {
     }
 
     //AllArgs Constructor
-    public Hokage(String nome, int idade, boolean vivoOuNao, String aldeia, int missoes, double saldoBancario, double altura){
+    public Hokage(String nome, int idade, boolean vivoOuNao, String aldeia, int missoes, double saldoBancario, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.vivoOuNao = vivoOuNao;
