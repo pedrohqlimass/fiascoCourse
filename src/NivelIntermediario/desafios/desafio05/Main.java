@@ -8,7 +8,7 @@ public class Main {
         naruto.consultarSaldo();
         System.out.println(naruto.toString());
 
-        System.out.println("-----");
+        System.out.println("------");
 
         ContaPoupanca sasuke = new ContaPoupanca("Uchiha Sasuke", 100, TipoConta.POUPANÇA);
         sasuke.depositar(50);
