@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         /*
         * Array
-        * E estatico, nao altera de tamanho
+        * É estático, não altera de tamanho
         * */
 
         String[] ninjasArray = new String[4];
@@ -26,6 +26,9 @@ public class Main {
 
         System.out.println("-------------------");
 
+        /*
+        * ArrayList não é estático, ele pode aumentar e diminuir de tamanho
+        * */
         List<String> ninjasList = new ArrayList<>();
         ninjasList.add("Uzumaki Naruto");
         ninjasList.add("Uchiha Sasuke");
@@ -47,6 +50,6 @@ public class Main {
         System.out.println("ninjasList = " + ninjasList);
 
         // Visualizar o tamanho da lista
-        System.out.println(ninjasList.size());
+        System.out.println("Tamanho da Lista: " + ninjasList.size() + " elementos");
     }
 }
