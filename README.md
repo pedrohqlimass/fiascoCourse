@@ -4,7 +4,7 @@ Este projeto reúne meus estudos de Java do curso Fiasco, que ensina programaç�
 
 ## Sobre o Curso
 
-O curso Fiasco usa personagens, técnicas e histórias de Naruto para explicar conceitos de Java de forma prática e divertida. Você vai aprender:
+No curso o Fiasco usa personagens, técnicas e histórias de Naruto para explicar conceitos de Java de forma prática e divertida. Você vai aprender:
 
 - Fundamentos da linguagem Java
 - Estruturas de controle (if, loops)
