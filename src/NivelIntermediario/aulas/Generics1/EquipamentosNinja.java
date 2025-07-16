@@ -1,4 +1,4 @@
-package NivelIntermediario.aulas.Generics;
+package NivelIntermediario.aulas.Generics1;
 
 public class EquipamentosNinja {
     private String nome;
