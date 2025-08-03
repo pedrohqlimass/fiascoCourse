@@ -29,6 +29,7 @@ public class Main {
                 switch (opcao) {
                     case 1:
                         sistemaNinja.inicializarNinjas();
+                        break;
                     case 2:
                         sistemaNinja.exibirNinjas();
                         break;
