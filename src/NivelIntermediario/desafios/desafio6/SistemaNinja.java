@@ -1,13 +1,14 @@
 package NivelIntermediario.desafios.desafio6;
 
-import java.util.InputMismatchException;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class SistemaNinja {
 
     private LinkedList<Ninja> ninjasLinkedList;
     private Scanner scanner;
+    private Comparator<Ninja> ninjaComparator;
+    private int opcao;
+    private String i;
 
     public SistemaNinja(LinkedList<Ninja> ninjasLinkedList, Scanner scanner) {
         this.ninjasLinkedList = ninjasLinkedList;
@@ -83,5 +84,66 @@ public class SistemaNinja {
         }
     }
 
+    public void ordenarNinjas() {
+        do {
+            try {
+                System.out.println("Escolha como quer ordenar:");
+                System.out.println("1. Nome.");
+                System.out.println("2. Idade.");
+                System.out.println("3. Vila.");
+
+                int opcaoOrdenar = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (opcaoOrdenar) {
+                    case 1:
+                        System.out.println("Ordenando por nome...");
+                        ninjasLinkedList.sort(Comparator.comparing(Ninja::getNome));
+                        System.out.println("Lista ordenada por Nome:");
+                        exibirNinjas();
+                        break;
+                    case 2:
+                        System.out.println("Ordenando por idade...");
+                        ninjasLinkedList.sort(Comparator.comparing(Ninja::getIdade));
+                        System.out.println("Lista ordenada por Idade:");
+                        exibirNinjas();
+                        break;
+                    case 3:
+                        System.out.println("Ordenando por vila...");
+                        ninjasLinkedList.sort(Comparator.comparing(Ninja::getVila));
+                        System.out.println("Lista ordenada por Vila:");
+                        exibirNinjas();
+                        break;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Opção invalida. Tente novamente!");
+                scanner.nextLine();
+                opcao = -1;
+            }
+        } while (opcao != 0);
+    }
+
+    public void buscarNinjaPorNome() {
+        if (ninjasLinkedList.isEmpty()) {
+            System.out.println("Lista vazia! Adiciona ninjas para buscar!");
+            return;
+        }
+
+        System.out.println("Digite um nome para buscar?");
+        String nomeBusca = scanner.nextLine();
+
+        Ninja ninja = null;
+        for (int i = 0; i < ninjasLinkedList.size(); i++) {
+            ninja = ninjasLinkedList.get(i);
+        }
+
+        if (ninja.getNome().equalsIgnoreCase(nomeBusca)) {
+            System.out.println("Ninja encontrado!");
+            System.out.println("Posição na lista: " + (i + 1));
+            System.out.println("Informações: " + ninja);
+        } else {
+            System.out.println("Ninja " + nomeBusca + " não foi encontrado.");
+        }
+    }
 
 }

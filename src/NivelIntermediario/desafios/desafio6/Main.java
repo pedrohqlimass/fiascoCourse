@@ -20,6 +20,8 @@ public class Main {
             System.out.println("3. Remover primeiro ninja.");
             System.out.println("4. Adicionar ninja no início.");
             System.out.println("5. Acessar por posição.");
+            System.out.println("6. Ordenar Ninjas por Nome, Idade e Vila.");
+            System.out.println("7. Buscar ninja por nome.");
             System.out.println("0. Sair do programa.");
 
             try {
@@ -42,6 +44,11 @@ public class Main {
                     case 5:
                         sistemaNinja.acessarPorPosicao();
                         break;
+                    case 6:
+                        sistemaNinja.ordenarNinjas();
+                        break;
+                    case 7:
+                        sistemaNinja.buscarNinjaPorNome();
                     case 0:
                         System.out.println("Saindo do sistema...");
                         break;
