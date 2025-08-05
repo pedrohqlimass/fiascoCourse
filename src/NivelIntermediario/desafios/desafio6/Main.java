@@ -9,8 +9,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         LinkedList<Ninja> lista = new LinkedList<>();
-
         SistemaNinja sistemaNinja = new SistemaNinja(lista, scanner);
+
         int opcao;
 
         do {
