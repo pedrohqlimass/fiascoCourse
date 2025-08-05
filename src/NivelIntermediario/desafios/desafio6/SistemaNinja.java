@@ -84,6 +84,7 @@ public class SistemaNinja {
         }
     }
 
+    // DESAFIO EXTRA: Implementa ordenação por múltiplos critérios e busca linear
     public void ordenarNinjas() {
         do {
             try {
@@ -123,6 +124,7 @@ public class SistemaNinja {
         } while (opcao != 0);
     }
 
+    // DESAFIO EXTRA: Busca linear eficiente por nome
     public void buscarNinjaPorNome() {
         if (ninjasLinkedList.isEmpty()) {
             System.out.println("Lista vazia! Adiciona ninjas para buscar!");
